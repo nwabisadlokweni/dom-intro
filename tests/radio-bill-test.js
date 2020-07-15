@@ -90,7 +90,7 @@ describe("warning & danger level", function () {
     })
 
     it("it should allow the total to increase after reaching the warning level", function () {
-        let radioBtn = textBill();
+        let radioBtn = radioBill();
 
         radioBtn.calculateTotals("call");
         radioBtn.calculateTotals("call");
@@ -119,7 +119,7 @@ describe("warning & danger level", function () {
 
 
     it("it should stop the total cost from increasing when the danger level has been reached", function () {
-        let radioBtn = textBill();
+        let radioBtn = radioBill();
 
         radioBtn.calculateTotals("call");
         radioBtn.calculateTotals("call");
